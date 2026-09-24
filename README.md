@@ -5,9 +5,11 @@
 
 ## Команда
 Ормонова Рахиля, devops
+Эркинбекова Эльнура, Backend developer
 
 ## Стек технологий
 Docker, Kubernetes, Linux
+Python/FastAPI, PostgreSQL
 
 ## Инструкции по запуску
 1. Клонируйте репозиторий и перейдите в директорию проекта:
@@ -16,3 +18,8 @@ Docker, Kubernetes, Linux
    cp .env.example .env
 3. Соберите и запустите контейнеры с помощью Docker Compose:
    docker compose up -d --build
+main
+4. Примените базы данных и миграции в локальном кластере:
+   `kubectl apply -f ./k8s/`
+5. Проверьте статус запущенных сервисов через командную строку:
+   `kubectl get pods`
